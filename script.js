@@ -8,6 +8,7 @@
 
 const START_VALUE = 1;
 const END_VALUE = 100;
+const POW = 2;
 
 const inputValue = prompt('Please enter some number')
 
@@ -26,12 +27,12 @@ else {
   let result = [];
 for (let i = START_VALUE; i <= END_VALUE; i ++) {
 
-  if (Math.pow(i, 2) < absInt) {
+  if (Math.pow(i, POW) < absInt) {
     result.push(i);
   }
 }
 
 alert(`
-  All of these numbers (from 1 to 100) raised to the power of 2 do not exceed the number you entered (${absInt}):\n ${result.join(', ')}
+  All of these numbers (from 1 to 100) raised to the power of ${POW} do not exceed the number you entered (${absInt}):\n ${result.join(', ')}
   `)
 }
