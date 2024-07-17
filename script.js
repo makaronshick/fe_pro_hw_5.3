@@ -24,7 +24,7 @@ else if (isNaN(inputValue)) {
 else {
   const absInt = Math.abs(parseInt(inputValue));
 
-  let result = [];
+  const result = [];
 for (let i = START_VALUE; i <= END_VALUE; i ++) {
 
   if (Math.pow(i, POW) < absInt) {
